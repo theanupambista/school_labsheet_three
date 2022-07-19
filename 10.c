@@ -51,11 +51,7 @@ int main()
     {
         for (j = 0; j < c; j++)
         {
-            add[i][j] = 0;
-            for (k = 0; k < c; k++)
-            {
-                add[i][j] += a[i][k] + b[k][j];
-            }
+            add[i][j] = a[i][j] + b[i][j];
         }
     }
     // for printing result
@@ -73,11 +69,7 @@ int main()
     {
         for (j = 0; j < c; j++)
         {
-            sub[i][j] = 0;
-            for (k = 0; k < c; k++)
-            {
-                sub[i][j] += a[i][k] + b[k][j];
-            }
+            sub[i][j] = a[i][j] - b[i][j];
         }
     }
     // for printing result
